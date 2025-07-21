@@ -2,7 +2,7 @@
 ![](Illustration.png)
 This project is a bilingual Optical Character Recognition (OCR) system designed to process handwritten medical prescriptions in Arabic and English. It combines advanced computer vision techniques for text detection and recognition with a natural language processing (NLP) module for text correction and classification. The system outputs a structured list of key-value pairs, where each pair consists of a medicine name and its corresponding prescription instruction.
 
-## Table of Contents
+## Table of Contents 📃
 
 - [Overview](#overview)
 - [Installation](#installation)
@@ -16,7 +16,7 @@ This project is a bilingual Optical Character Recognition (OCR) system designed 
 - [Acknowledgments](#acknowledgments)
 - [License](#license)
 
-## Overview
+## Overview 👀
 
 The Handwritten Prescription OCR system is tailored for interpreting handwritten prescriptions, a challenging task due to the variability in handwriting styles and the bilingual nature of the text (Arabic and English). It employs a two-stage pipeline:
 
@@ -25,7 +25,7 @@ The Handwritten Prescription OCR system is tailored for interpreting handwritten
 
 The final output is a list of tuples, each containing a medicine name and its associated instruction, suitable for integration into pharmacy management systems or electronic health records.
 
-## Installation
+## Installation 🚀
 
 To set up the project, follow these steps:
 
@@ -40,7 +40,7 @@ To set up the project, follow these steps:
 3. **Set Up Hugging Face Token**:
    - Obtain a token from [Hugging Face](https://huggingface.co/settings/tokens) to access the models. Replace the hardcoded token in the code with your own or set it as an environment variable.
 
-## Usage
+## Usage 💻
 
 To process prescription images, use the `submit` function with a list of image paths:
 
@@ -53,7 +53,7 @@ for result in results:
 
 This will output a list of (medicine, prescription) pairs for each image. The system expects JPEG images and performs best with clear, legible handwriting.
 
-## Computer Vision Module
+## Computer Vision Module 1️⃣
 
 The computer vision module handles text detection and recognition in two steps:
 
@@ -68,7 +68,7 @@ The computer vision module handles text detection and recognition in two steps:
 
 This module leverages GPU acceleration if available, enhancing performance for real-time applications.
 
-## NLP Module
+## NLP Module 2️⃣
 
 The NLP module processes the extracted text to ensure accuracy and structure:
 
@@ -86,7 +86,7 @@ The NLP module processes the extracted text to ensure accuracy and structure:
 
 This module enhances the reliability of the extracted text, addressing common handwriting errors and linguistic nuances.
 
-## Models
+## Models 🤗
 
 The project uses pre-trained models from Hugging Face:
 
@@ -97,14 +97,13 @@ The project uses pre-trained models from Hugging Face:
   - TrOCR (Primary Recognition Module): [David-Magdy/TROCR_MASTER_V2](https://huggingface.co/David-Magdy/TROCR_MASTER_V2) with processor from [microsoft/trocr-base-handwritten](https://huggingface.co/microsoft/trocr-base-handwritten)
   - TrOCR (Prescription Data): [David-Magdy/TROCR_LARGE_PRESCRIPTION_DATA](https://huggingface.co/David-Magdy/TROCR_LARGE_PRESCRIPTION_DATA)
   - TrOCR (Base Model Fine-Tuned On Khatt and I_am Datasets): [David-Magdy/TR_OCR_LARGE](https://huggingface.co/David-Magdy/TR_OCR_LARGE)
-  - YOLO (Text Detection Module): [wahdan2003/YOLO_handwritten_medical](https://huggingface.co/wahdan2003/YOLO_handwritten_medical)
 
 
-## Database
+## Database 📚
 
 The system relies on an Excel file (`database.xlsx`) containing medicine names and their classifications. You can replace it with your own database by modifying the `drug_file` path in the code. Ensure the file includes a `text` column for medicine names and a `medicine` column for classification (1 for medicines, 0 for instructions).
 
-## Output Format
+## Output Format 📄
 
 The output is a list of tuples per image, where each tuple contains a medicine name (key) and its prescription instruction (value). Example:
 
@@ -114,7 +113,7 @@ The output is a list of tuples per image, where each tuple contains a medicine n
 
 This structured format facilitates downstream applications like automated dispensing or record-keeping.
 
-## Limitations
+## Limitations 🧱
 
 - Optimized for handwritten prescriptions; performance may degrade with printed text.
 - Accuracy depends on handwriting legibility and image quality.
@@ -122,9 +121,9 @@ This structured format facilitates downstream applications like automated dispen
 - Supports only Arabic and English; additional languages need further adaptation.
 
 ## Acknowledgments
+This Project won [3rd place 🥉](https://media.licdn.com/dms/image/v2/D4D22AQG7sAQ7g6Q3Kw/feedshare-shrink_2048_1536/B4DZbOJFshG8As-/0/1747215364441?e=1755734400&v=beta&t=HKIKBO8XOjiu7ocLZbsVJtw0NO6HUmJfjAScEuNzzDg) among 20+ teams in STP (Step Toward Progress) Machathon 6.00.
+- Developed By [Ahmed Wahdan](https://github.com/Ahmedwahdan2003) and Me.
 
-Developed By [Ahmed Wahdan](https://github.com/Ahmedwahdan2003) and Me.
-
-## License
+## License ⚓
 
 This project is licensed under the MIT License.
