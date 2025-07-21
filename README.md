@@ -1,5 +1,5 @@
 # Handwritten Prescription OCR
-
+![](Illustration.png)
 This project is a bilingual Optical Character Recognition (OCR) system designed to process handwritten medical prescriptions in Arabic and English. It combines advanced computer vision techniques for text detection and recognition with a natural language processing (NLP) module for text correction and classification. The system outputs a structured list of key-value pairs, where each pair consists of a medicine name and its corresponding prescription instruction.
 
 ## Table of Contents
