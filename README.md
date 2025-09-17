@@ -121,7 +121,7 @@ This structured format facilitates downstream applications like automated dispen
 - Supports only Arabic and English; additional languages need further adaptation.
 
 ## Acknowledgments
-This Project won [3rd place 🥉]([https://media.licdn.com/dms/image/v2/D4D22AQG7sAQ7g6Q3Kw/feedshare-shrink_2048_1536/B4DZbOJFshG8As-/0/1747215364441?e=1755734400&v=beta&t=HKIKBO8XOjiu7ocLZbsVJtw0NO6HUmJfjAScEuNzzDg](https://www.linkedin.com/posts/stpegypt_stpabr25-20abryears-aesaeuafdaexafgaezafeaerafgabraexafcaezafgaeqafcaeuafcaep-activity-7328352413533290496-Rr9N?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdix5cBwVNbW1Z2g3kLXaVwu6tNgrRE8xQ)) among 20+ teams in STP (Step Toward Progress) Machathon 6.00.
+This Project won [3rd place 🥉]([https://media.licdn.com/dms/image/v2/D4D22AQG7sAQ7g6Q3Kw/feedshare-shrink_2048_1536/B4DZbOJFshG8As-/0/1747215364441?e=1755734400&v=beta&t=HKIKBO8XOjiu7ocLZbsVJtw0NO6HUmJfjAScEuNzzDg](https://www.linkedin.com/posts/stpegypt_stpabr25-20abryears-aesaeuafdaexafgaezafeaerafgabraexafcaezafgaeqafcaeuafcaep-activity-7328352413533290496-Rr9N?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdix5cBwVNbW1Z2g3kLXaVwu6tNgrRE8xQ) among 20+ teams in STP (Step Toward Progress) Machathon 6.00.
 - Developed By [Ahmed Wahdan](https://github.com/Ahmedwahdan2003) and Me.
 
 ## License ⚓
